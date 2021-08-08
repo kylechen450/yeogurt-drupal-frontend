@@ -1,15 +1,34 @@
 # Drupal Frontend readme
 
+This is a copy of [vishalsahody/yeogurt-to-drupal-theme](https://github.com/vishalsahody/yeogurt-to-drupal-theme) with a newer version of Yeogurt Generator.
+
+## development environment and packages
+#### Node
+node --version  
+v8.17.0  
+npm --version  
+6.13.4  
+npx --version  
+6.13.4
+
+#### Gulp
+gulp --version  
+CLI version: 2.3.0  
+Local version: 4.0.2
+
+#### Yo and Yeogurt
+yo@4.3.0  
+yo@3.1.1  
+generator-yeogurt@3.1.2
+
+#### Node plugin used
+gulp-sftp-up4: 0.1.8
+
+
 Generated on 2021-08-06 using
 [generator-yeogurt@3.1.2](https://github.com/larsonjj/generator-yeogurt)
 
-## Description
-
-This is an example readme file.
-Describe your site/app here.
-
 ## Technologies used
-
 JavaScript
 
 - [Browserify](http://browserify.org/)with ES6/2015 support through [Babel](https://babeljs.io/)
@@ -55,13 +74,4 @@ Code Management
 This project uses [Gulp](http://gulpjs.com) and npm scripts (i.e. `npm run...`) to run automated tasks for development and production builds.
 The tasks are as follows:
 
-`npm run build`: Build a production version of your site/app
-
-`npm run serve`: Compiles preprocessors and boots up development server
-`npm run serve -- --open`: Same as `npm run serve` but will also open up site/app in your default browser
-`npm run serve:prod`: Same as `npm run serve` but will run all production tasks so you can view the site/app in it's final optimized form
-
-`npm test`: Lints all `*.js` file in the `source` folder using eslint and runs all `*.test.js` file unit tests through [Karma](http://karma-runner.github.io/0.13/index.html) and Jasmine
-`npm test -- --watch`: Same as `npm test` but will constantly watch `*.test.js` files and rerun tests when changes are detected
-
-**_Adding the `-- --debug` option to any npm script command to display extra debugging information (ex. data being loaded into your templates)_**
+`gulp serve`: Compiles preprocessors and uploads compiled files to development server.
